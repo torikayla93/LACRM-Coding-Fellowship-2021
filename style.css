@@ -24,3 +24,8 @@ div{
     color: #31a663;
     letter-spacing: 1px;
 }
+
+.indent{
+
+    text-indent: 25px;
+}

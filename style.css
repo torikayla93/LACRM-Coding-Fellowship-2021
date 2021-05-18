@@ -1,0 +1,26 @@
+body{
+background-color:rgb(226, 226, 226);
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#welcome{
+    text-align: center;
+    color: white;
+    background-color: #337cb1;
+}
+
+div{
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px; 
+    margin-top: 15px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+
+.horizontal{
+    border-bottom: 3px dashed rgb(214, 213, 213);
+    color: #3ca674;
+    letter-spacing: 1px;
+}

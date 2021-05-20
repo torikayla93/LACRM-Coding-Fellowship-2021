@@ -1,78 +1,137 @@
 body{
-    background-color: black;
-    color:white;
-    font: 25px "poppins";
-
-}
-
-.accent {
-    @font-face {
-        font-family: "CustomFont";
-        src: url("file:///Users/torikayla93/Library/Fonts/Mischella.otf");
-        }
-}
-
-.container {
-    display: flex;
-  }  
-
-#logo{
-  width: 150px;
-  height: 40px;
-  padding-right: 950px;
-  margin-top: -30px;
-}
-
-/* The navbar container */
-.topnav {
-    overflow: hidden;
-  }
-  
-  /* Navbar links */
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    font: 15px "poppins";
-    padding: 14px 16px;
-    padding-top: 5px;
-    text-decoration: none;
-  }
-  
-  /* Links - change color on hover */
-  .topnav a:hover {
-    background-color: black;
-    color:pink;
-  }
-
-  body, html {
-    height: 100%;
+  display: flex;
 }
 
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://milkshake-production-user-images.imgix.net/360fb2f4-05ce-49dc-b7c5-89a4c8050f7b?auto=format&w=828");
+  background-image: linear-gradient(rgba(233, 232, 232, 0.5), rgba(233, 232, 232, 0.5)), url("https://milkshake-production-user-images.imgix.net/360fb2f4-05ce-49dc-b7c5-89a4c8050f7b?auto=format&w=828");
 
   /* Set a specific height */
   height: 100%;
+  width: 100%;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  margin-top: -20px;
+  position: absolute;
+  display: flex;
 }
 
 /* Place text in the middle of the image */
 .hero-text {
-  text-align: left;
+  text-align: justify;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  font: 15px "poppins";
+  color: black;
+  display: flex;
+}
+
+#main-container{
+  margin-left: -200px;
+  margin-top: 270px;
+  margin-right: 500px;
+}
+
+h1{
+  font-family: "Playfair Display", serif;
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  font: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.em {
+  font-family: Arial, Helvetica, sans-serif;
+  font: Raleway;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+
+text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button-text{
+  position: absolute;
+  width: 350px;
+  height: 21px;
+  left: 99px;
+  top: 866px;
+  
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  
+  color: #000000;
+}
+
+/* primary CTA */
+button{
+  width: 402px;
+  height: 59px;
+  left: 82px;
+  top: 847px;
+  text-decoration: none;
+  display:inline-block;
+  border:none;
+  cursor: pointer;
+  transition: 0.9s;
+
+  background-color:rgb(248, 221, 179);
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+button:hover{
+  background-color: white;
+  color:black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  opacity: 1;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: black;
+  text-decoration-thickness: 3px;
+}
+
+/* visited link */
+a:visited {
+  color:black;
+  text-decoration: underline;
+  text-decoration-color: black;
+  text-decoration-thickness: 3px;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: rgb(248, 221, 179);
+  text-decoration-thickness: 3px;
+}
+
+/* selected link */
+a:active {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: rgb(248, 221, 179);
+  text-decoration-thickness: 3px;
 }

@@ -1,10 +1,91 @@
-body{
-  display: flex;
-}
-
 @font-face {
   font-family: myFirstFont;
   src: url(../Sun-Catcher-Handwritten-Script/Web-PS/Sun\ Catcher.woff2);
+}
+
+header {
+  display: flex;
+  justify-content: space-between, flex-end;
+  width: 100%;
+}
+
+.logo {
+  font-size: 2em;
+  line-height: 50px;
+  padding: 0 0.5em;
+}
+
+.hamburger {
+  padding: 0 0.5em;
+  font-size: 1.5em;
+  line-height: 50px;
+  display: inline-block;
+  z-index: 9;
+  color:black;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+
+nav:hover {
+  display: block;
+}
+
+nav a {
+  display: block;
+  line-height:50px;
+}
+
+nav a:hover {
+  color: black;
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: rgb(248, 221, 179);
+  text-decoration-thickness: 3px;
+}
+
+.hamburger:hover ~ nav {
+  display: block;
+  color:black;
+}
+
+@media only screen and ( min-width: 768px )
+{
+  .hamburger {
+    display:none;
+  }
+
+  nav {
+    position:static;
+    display:flex;
+    background:none;
+    clear:none;
+    flex:1;
+    justify-content:flex-end;
+  }
+
+  nav:hover {
+    display:flex;
+  }
+
+  nav a {
+    padding:0 1em;
+  }
+
+  #menu {
+    color:black;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 3px;
+  }
+
+}
+
+body{
+  display: flex;
 }
 
 /* The hero image */
@@ -37,9 +118,8 @@ body{
 
 #main-container{
   display: flexbox;
-  margin-left: -300px;
-  margin-right: 450px;
-  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
 
 h2{
@@ -118,7 +198,7 @@ button{
 button:hover{
   background-color: white;
   color:black;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 5px 50px 0 rgba(0,0,0,0.19);
   opacity: 1;
 }
 

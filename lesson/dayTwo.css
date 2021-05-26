@@ -2,10 +2,15 @@ body{
   display: flex;
 }
 
+@font-face {
+  font-family: myFirstFont;
+  src: url(../Sun-Catcher-Handwritten-Script/Web-PS/Sun\ Catcher.woff2);
+}
+
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(233, 232, 232, 0.5), rgba(233, 232, 232, 0.5)), url("https://milkshake-production-user-images.imgix.net/360fb2f4-05ce-49dc-b7c5-89a4c8050f7b?auto=format&w=828");
+  background-image: linear-gradient(rgba(233, 232, 232, 0.5), rgba(233, 232, 232, 0.5)), url("test.img");
 
   /* Set a specific height */
   height: 100%;
@@ -31,22 +36,36 @@ body{
 }
 
 #main-container{
-  margin-left: -200px;
-  margin-top: 270px;
-  margin-right: 500px;
+  display: flexbox;
+  margin-left: -300px;
+  margin-right: 450px;
+  flex-wrap: nowrap;
+}
+
+h2{
+  font-family: myFirstFont;
+  src: url(../Sun-Catcher-Handwritten-Script/Web-PS/Sun\ Catcher.woff2);
+  margin-bottom: -60px;
+  font-size: 72px;
+  letter-spacing: 2px;
+  font-weight: 200;
 }
 
 h1{
-  font-family: "Playfair Display", serif;
+  position: static;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+  font-size: 48px;
 }
 
 p{
-  font-family: Arial, Helvetica, sans-serif;
-  font: Raleway;
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: normal;
+  text-align: left;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 36px;
+  letter-spacing: -0.5px;
 }
 
 .em {

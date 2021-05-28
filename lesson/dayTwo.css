@@ -3,31 +3,27 @@
   src: url(../Sun-Catcher-Handwritten-Script/Web-PS/Sun\ Catcher.woff2);
 }
 
-header {
-  display: flex;
-  justify-content: space-between, flex-end;
-  width: 100%;
-}
-
 .logo {
   font-size: 2em;
   line-height: 50px;
   padding: 0 0.5em;
+  justify-content: space-between, flex-end;
 }
 
-.hamburger {
+.fa-bars {
   padding: 0 0.5em;
   font-size: 1.5em;
   line-height: 50px;
   display: inline-block;
-  z-index: 9;
+  z-index: 1;
   color:black;
 }
 
 nav {
-  position: absolute;
+  position:absolute;
   width: 100%;
   display: none;
+  justify-content: space-between, flex-end;
 }
 
 nav:hover {
@@ -47,24 +43,30 @@ nav a:hover {
   text-decoration-thickness: 3px;
 }
 
-.hamburger:hover ~ nav {
+.fa-bars:hover ~ nav {
   display: block;
-  color:black;
+  color: black;
+}
+
+i:hover ~ nav {
+  display: block;
+  color: black;
 }
 
 @media only screen and ( min-width: 768px )
 {
-  .hamburger {
+  .fa-bars {
     display:none;
   }
 
   nav {
-    position:static;
+    position:sticky;
     display:flex;
     background:none;
     clear:none;
     flex:1;
-    justify-content:flex-end;
+    width: 100%;
+    justify-content: flex-end;
   }
 
   nav:hover {
@@ -80,6 +82,8 @@ nav a:hover {
     text-decoration: underline;
     text-decoration-color: black;
     text-decoration-thickness: 3px;
+    justify-content: space-between, flex-end;
+    display: flexbox;
   }
 
 }
@@ -91,14 +95,14 @@ body{
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(233, 232, 232, 0.5), rgba(233, 232, 232, 0.5)), url("test.img");
+  background-image: linear-gradient(rgba(233, 232, 232, 0.5), rgba(233, 232, 232, 0.5)), url(".");
 
-  /* Set a specific height */
+/* Set a specific height */
   height: 100%;
   width: 100%;
 
-  /* Position and center the image to scale nicely on all screens */
-  background-position: bottom;
+/* Position and center the image to scale nicely on all screens */
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -116,6 +120,7 @@ body{
   display: flex;
 }
 
+/* Main Header + CTA Area */
 #main-container{
   display: flexbox;
   align-items: flex-end;
@@ -159,6 +164,7 @@ p{
 text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
 }
 
+/* Main CTA Button */
 .button-text{
   position: absolute;
   width: 350px;

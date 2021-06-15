@@ -1,0 +1,32 @@
+<!-- 
+    
+vanilla js
+the Dom
+
+use html to create the box + button 
+
+make a function
+    get the value that the user inputs
+    validate the information
+        make sure some certain things are present (@ sign)
+
+call function when user presses submit 
+
+-->
+
+<header>
+    <title>Email Validation TWO</title>
+    <script src="emailTwo.js"></script>
+    <link rel="stylesheet" href="emailTwo.css">
+</header>
+<body>
+    <div>
+        <form>
+            <h2>My Portfolio is Coming Soon!</h2>
+            <input type = "text" id = "email">
+            <button id = "submitEmail" onclick = "validateEmail()">Verify Email</button>
+        </form>
+    </div>
+</body>
+
+<h2 id="result" onclick = "validateEmail(result)"></h2>

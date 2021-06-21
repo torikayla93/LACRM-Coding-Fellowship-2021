@@ -10,15 +10,6 @@
   justify-content: space-between, flex-end;
 }
 
-.fa-bars {
-  padding: 0 0.5em;
-  font-size: 1.5em;
-  line-height: 50px;
-  display: inline-block;
-  z-index: 1;
-  color:black;
-}
-
 nav {
   position:absolute;
   width: 100%;
@@ -28,6 +19,7 @@ nav {
 
 nav:hover {
   display: block;
+  color:rgb(248, 221, 179);
 }
 
 nav a {
@@ -36,28 +28,43 @@ nav a {
 }
 
 nav a:hover {
-  color: black;
+  color: rgb(248, 221, 179);
   font-weight: 800;
-  text-decoration: underline;
-  text-decoration-color: rgb(248, 221, 179);
-  text-decoration-thickness: 3px;
 }
 
-.fa-bars:hover ~ nav {
-  display: block;
-  color: black;
+
+/* Style all font awesome icons */
+.fa {
+  padding-top: 20px;
+  font-size: 30px;
+  text-align: left;
+  text-decoration: none;
 }
 
-i:hover ~ nav {
-  display: block;
-  color: black;
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* LinkedIn */
+.fa-linkedin {
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  color: white;
 }
 
 @media only screen and ( min-width: 768px )
 {
-  .fa-bars {
-    display:none;
-  }
 
   nav {
     position:sticky;
@@ -77,11 +84,15 @@ i:hover ~ nav {
     padding:0 1em;
   }
 
+  .fa {
+    display: flex;
+  }
+
+  .fa:hover{
+    display: flex;
+  }
+
   #menu {
-    color:black;
-    text-decoration: underline;
-    text-decoration-color: black;
-    text-decoration-thickness: 3px;
     justify-content: space-between, flex-end;
     display: flexbox;
   }
@@ -95,7 +106,7 @@ body{
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(233, 232, 232, 0.5), rgba(233, 232, 232, 0.5)), url(".");
+  background-image: linear-gradient(rgba(233, 232, 232, 0.5), rgba(233, 232, 232, 0.5)), url("../DSC_0089-Recovered.jpg");
 
 /* Set a specific height */
   height: 100%;
@@ -211,7 +222,7 @@ button:hover{
 /* unvisited link */
 a:link {
   color: black;
-  text-decoration: underline;
+  text-decoration: bold;
   text-decoration-color: black;
   text-decoration-thickness: 3px;
 }
@@ -219,24 +230,18 @@ a:link {
 /* visited link */
 a:visited {
   color:black;
-  text-decoration: underline;
+  text-decoration: bold;
   text-decoration-color: black;
   text-decoration-thickness: 3px;
 }
 
 /* mouse over link */
 a:hover {
-  color: black;
+  color:rgb(248, 221, 179);
   font-weight: 800;
-  text-decoration: underline;
-  text-decoration-color: rgb(248, 221, 179);
-  text-decoration-thickness: 3px;
 }
 
 /* selected link */
 a:active {
-  color: black;
-  text-decoration: underline;
-  text-decoration-color: rgb(248, 221, 179);
-  text-decoration-thickness: 3px;
+  color:rgb(248, 221, 179);
 }

@@ -1,0 +1,62 @@
+<html>
+<head>
+<style>
+    div {
+        background: white;
+        border: 1px black;
+        width:300px;
+        height: 100px;
+        box-shadow: 3px 3px 3px #88888856;
+        display: flex;
+    }
+    h2{
+        color: black;
+        text-align:center;
+    }
+    input{
+        height: 20px;
+        width: 50px;
+    }
+</style>
+</head>
+<body>
+    <div class="card card-default">
+        <div class="card-header">
+            <div class="card-header-icon">
+                <img class="zp-icon-image medium" src="https://d3bnlkto289wdc.cloudfront.net/assets/packs/media/illustrations/illo-gift-9b9e1961.svg" alt="">
+            </div>
+            <h4 class="card-title">Want $100? Refer a friend</h4>
+        </div>
+        <div class="card-content-main">
+            <p>Share Gusto and you’ll both earn Visa gift cards.</p>
+            <p class="c-salt-700 h-8--sm margin-bottom-20px">
+                <a class="gusto-link" href="/referrals?ref=widget" data-react-link="true">Learn more</a></p>
+                <div class="flex margin-bottom-10px">
+                    <input class="faux-input width-100 margin-right-15px fs-mask" id="31dxf" readonly="" value="https://gusto.com/d/victoria7491">
+                    <span class="fs-unmask">
+                        <button type="button" class="btn btn-md margin-none btn-primary" data-clipboard-text="https://gusto.com/d/victoria7491">Copy link</button>
+                    </span>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    function copyLink() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+
+  /* Select the text field */
+  copyText.select(); 
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+
+

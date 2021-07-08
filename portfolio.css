@@ -1,0 +1,239 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../Sun-Catcher-Handwritten-Script/Web-PS/Sun\ Catcher.woff2);
+  }
+  
+  .logo {
+    font-size: 2em;
+    line-height: 50px;
+    padding: 0 0.5em;
+    justify-content: space-between, flex-end;
+  }
+  
+  nav {
+    position:absolute;
+    width: 100%;
+    display: none;
+    justify-content: space-between, flex-end;
+  }
+  
+  nav:hover {
+    display: block;
+    color:rgb(32, 32, 32);
+  }
+  
+  nav a {
+    display: block;
+    line-height:50px;
+  }
+  
+  nav a:hover {
+    color: rgb(32, 32, 32);
+    font-weight: 800;
+  }
+  
+  
+  /* Style all font awesome icons */
+  .fa {
+    padding-top: 20px;
+    font-size: 30px;
+    text-align: left;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* LinkedIn */
+  .fa-linkedin {
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    color: white;
+  }
+  
+  /* Instagram */
+  .fa-instagram {
+    color: white;
+  }
+  
+  @media only screen and ( min-width: 768px )
+  {
+  
+    nav {
+      position:sticky;
+      display:flex;
+      background:none;
+      clear:none;
+      flex:1;
+      width: 100%;
+      justify-content: flex-end;
+    }
+  
+    nav:hover {
+      display:flex;
+    }
+  
+    nav a {
+      padding:0 1em;
+    }
+  
+    .fa {
+      display: flex;
+    }
+  
+    .fa:hover{
+      display: flex;
+    }
+  
+    #menu {
+      justify-content: space-between, flex-end;
+      display: flexbox;
+    }
+  
+  }
+  
+  body{
+    display: flex;
+  }
+  
+  /* The hero image */
+  .hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(233, 232, 232, 0.61), rgba(233, 232, 232, 0.781)), url("pexels-maria-orlova-4946907.jpg");
+  
+  /* Set a specific height */
+    height: 100%;
+    width: 100%;
+  
+  /* Position and center the image to scale nicely on all screens */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    display: flex;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+    text-align: justify;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    display: flex;
+  }
+  
+  /* Main Header + CTA Area */
+  #main-container{
+    display: flexbox;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  
+  h1{
+    position: static;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 2px;
+    font-size: 48px;
+  }
+  
+  p{
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: -0.5px;
+  }
+  
+  .em {
+    font-family: Arial, Helvetica, sans-serif;
+    font: Raleway;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+  
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Main CTA Button */
+  .button-text{
+    position: absolute;
+    width: 350px;
+    height: 21px;
+    left: 99px;
+    top: 866px;
+    
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color:white;
+  }
+  
+  /* primary CTA */
+  button{
+    width: 402px;
+    height: 59px;
+    left: 82px;
+    top: 847px;
+    text-decoration: none;
+    display:inline-block;
+    border:none;
+    cursor: pointer;
+    transition: 0.9s;
+    color: white;
+    background-color:black;
+  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  button:hover{
+    background-color: rgb(32, 32, 32);
+    color:white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 5px 50px 0 rgba(0,0,0,0.19);
+    opacity: 1;
+  }
+  
+  /* unvisited link */
+  a:link {
+    color: black;
+    text-decoration: bold;
+    text-decoration-color: black;
+    text-decoration-thickness: 3px;
+
+  }
+  
+  /* visited link */
+  a:visited {
+    color:black;
+    text-decoration: bold;
+    text-decoration-color: black;
+    text-decoration-thickness: 3px;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color:black;
+    font-weight: 800;
+  }
+  
+  /* selected link */
+  a:active {
+    color: black;
+  }

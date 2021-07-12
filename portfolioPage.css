@@ -2,8 +2,9 @@ div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    width: 250px;
+    width: 340px;
     display: block;
+    align-items: center;
   }
   
   div.gallery:hover {
